@@ -106,7 +106,7 @@ main {
     flex-wrap: wrap;
     position: relative;
     width: 1100px !important;
-    margin: 430px auto 100px auto;
+    margin: 430px auto 0 auto;
 }
 
 main section {
@@ -345,4 +345,12 @@ small {
 .free-btn small {
     color: #fff !important;
     opacity: 0.4;
+}
+
+footer h1{
+    margin-block: 50px 25px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
 }
