@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        .blue {
+            color: #2656ff;
+        }
+
+        header {
+            background-color: #f8f9ff;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .menu li a {
+            font-size: 1.3rem;
+            padding: 5px 15px;
+        }
+
+        .hero-content {
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-txt p{
+            font-size: 1.1rem;
+            max-width: 450px;
+        }
+
+        .hero-txt h2 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            margin-top: 50px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .btn-primary, .btn-secondary {
+            background-color: #2656ff;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.4rem;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            position: relative;
+            background-color: white;
+            color: black;
+        }
+
+        .btn-secondary::after {
+            content: '';
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            position: absolute;
+            border: 1px solid #2656ff;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            border-radius: 7px;
+        }
+
+        .hero-img {
+            width: 450px;
+        }
+
+        .hero-img img {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /* story section */
+        .story {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .story-img img {
+            width: 350px;
+        }
+
+        .story-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .story-txt {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .story-txt h3 {
+            font-size: 2.3rem;
+        }
+
+        .story-txt p {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            max-width: 700px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a class="logo" href="#">&lt;/<span class="blue">Aski Solutions</span>&gt;</a>
+                <ul class="menu">
+                    <li class="nav-bar-links"><a href="#">Hem</a></li>
+                    <li class="nav-bar-links"><a href="#">Min Story</a></li>
+                    <li class="nav-bar-links"><a href="#">Portfolio</a></li>
+                    <li class="nav-bar-links"><a href="#">Tjänster</a></li>
+                    <li class="nav-bar-links"><a href="#">Certifikat</a></li>
+                    <li class="nav-bar-links"><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <div class="hero-txt">
+                    <p>Mitt namn är...</p>
+                    <h2>Jag är <span class="blue">Webbutvecklar Student</span></h2>
+                    <p>Mitt mal är att hjälpa dig att ta fram en fantastisk hemsida samt bli framtidens stjärma inom webbutveckling.</p>
+                    <div class="hero-btn">
+                        <div class="btn-primary">Let's Talk</div>
+                        <div class="btn-secondary">Portfolio</div>                        
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="hero.jpg" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-img">
+                    <img src="hero.jpg">
+                </div>
+                <div class="story-txt">
+                    <h3>
+                        <span class="blue">Min Story</span>
+                        <br>
+                        Design UI/UX & Webbutvecklar Student.
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio, asperiores laudantium rem voluptatum voluptatem possimus quae qui reprehenderit aliquid id sapiente magnam architecto dicta, accusamus doloremque. Consectetur, facilis iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio, asperiores laudantium rem voluptatum voluptatem possimus quae qui reprehenderit aliquid id sapiente magnam architecto dicta, accusamus doloremque. Consectetur, facilis iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, odio, asperiores laudantium rem voluptatum, accusamus doloremque. Consectetur, <span class="blue">facilis iste...</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
