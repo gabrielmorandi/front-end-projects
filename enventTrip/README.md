@@ -1,4 +1,5 @@
 # eventTrip
 
-## This is a website for an event company
+This is a website for an event company
+
 view here: https://gabrielmorandi.github.io/eventTrip
