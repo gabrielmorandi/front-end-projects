@@ -12,7 +12,7 @@
 }
 
 .container-2 {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -295,8 +295,10 @@ nav {
 /* Top Events */
 .top-events {
     width: 100%;
+    height: 600px;
     margin-top: 100px;
     margin-bottom: 300px;
+    overflow-x: hidden;
 }
 
 .top-events h2 {
@@ -381,4 +383,68 @@ nav {
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-group {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    transition: .5s;
+}
+
+.slide input {
+    display: none;
+}
+
+.slider-manual {
+    position: absolute;
+    width: 80%;
+    top: -85px;
+    right: -400px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #000;
+}
+
+#radio1:checked ~ .slide-group {
+    margin-left: 0px;
+}
+
+#radio1:checked ~ .slider-manual > .manual1 {
+    background-color: #000;
+}
+
+#radio2:checked ~ .slide-group {
+    margin-left: -632px;
+}
+
+#radio2:checked ~ .slider-manual > .manual2 {
+    background-color: #000;
+}
+
+#radio3:checked ~ .slide-group {
+    margin-left: -1264px;
+}
+
+#radio3:checked ~ .slider-manual > .manual3 {
+    background-color: #000;
 }
