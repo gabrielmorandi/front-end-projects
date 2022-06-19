@@ -11,6 +11,11 @@
     margin: 0 auto;
 }
 
+.container-2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -291,6 +296,7 @@ nav {
 .top-events {
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 300px;
 }
 
 .top-events h2 {
@@ -349,4 +355,30 @@ nav {
     border-radius: 100%;
     border: none;
     cursor: pointer;
+}
+
+.card-txt {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-txt {
+    max-width: 440px;
+}
+
+.card-txt > div {
+    display: flex;
+    gap: 20px;
+}
+
+.card-txt > div small img {
+    width: 13.5px;
+}
+
+.card-txt > div small {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
