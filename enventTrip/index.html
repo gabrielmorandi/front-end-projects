@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eventTrip</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -105,6 +103,7 @@
                     <input type="radio" name="slide" id="radio1" checked>
                     <input type="radio" name="slide" id="radio2">
                     <input type="radio" name="slide" id="radio3">
+                    <input type="radio" name="slide" id="radio4">
                     
                     <div class="slide-group">
                         <div class="card-slide">
@@ -138,7 +137,7 @@
                             <div class="card-img">
                                 <img src="img/Rectangle 12 (1).png" >
                                 <div class="card-btn">
-                                    <button class="btn-secondary">$ 305</button>
+                                    <button class="btn-secondary">$305</button>
                                     <div>
                                         <button class="btn-three"><img src="img/bookmark.png" ></button>
                                         <button class="btn-three"><img src="img/heart.png" ></button>
@@ -192,7 +191,7 @@
                             <div class="card-img">
                                 <img src="img/Rectangle 12 (1).png" >
                                 <div class="card-btn">
-                                    <button class="btn-secondary">$ 305</button>
+                                    <button class="btn-secondary">$305</button>
                                     <div>
                                         <button class="btn-three"><img src="img/bookmark.png" ></button>
                                         <button class="btn-three"><img src="img/heart.png" ></button>
@@ -215,15 +214,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-nav">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
                     <div class="slider-manual">
-                        <label for="radio1" class="manual-btn manual1"></label>
-                        <label for="radio2" class="manual-btn manual2"></label>
-                        <label for="radio3" class="manual-btn manual3"></label>
+                        <img class="click1" src="img/Group 1.png" >
+                        <img class="click2" src="img/Group 2.png" >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banners">
+            <div class="ban-content">
+                <div class="ban-slides">
+                    <input type="radio" name="ban" id="radioo1" checked>
+                    <input type="radio" name="ban" id="radioo2">
+                    <input type="radio" name="ban" id="radioo3">
+    
+                    <div class="ban-slide-group">
+                        <div class="ban-card">
+                            <div class="ban-img"><img src="img/Group 10.png" ></div>
+                            <div class="ban-btn">Attend Event</div>
+                        </div>
+                        <div class="ban-card">
+                            <div class="ban-img"><img src="img/Group 10 (3).png" ></div>
+                            <div class="ban-btn">Attend Event</div>
+                        </div>
+                        <div class="ban-card">
+                            <div class="ban-img"><img src="img/Group 10 (2).png" ></div>
+                            <div class="ban-btn">Attend Event</div>
+                        </div>
+                    </div>
+                    
+                    <div class="ban-slider-manual">
+                        <img class="click11" src="img/arrow-left (1).png" >
+                        <img class="click22" src="img/arrow-left (1).png" >
                     </div>
                 </div>
             </div>
@@ -232,18 +254,54 @@
     <script>
         let count = 1;
         document.getElementById("radio1").checked = true;
+        var click1 = document.querySelector(".click1");
+        var click2 = document.querySelector(".click2");
+        
+        click1.addEventListener('click', backSlide, false);
+        click2.addEventListener('click', nextSlide, false);
 
-        function nextImage() {
+        function nextSlide() {
             count++;
-            if(count > 3) {
+            if(count > 4) {
                 count = 1;
             }
             document.getElementById("radio" + count).checked = true;
         }
 
-        setInterval( function() {
-            nextImage();
-        }, 5000);      
+        function backSlide() {
+            count--;
+            if(count < 1) {
+                count = 4;
+            }
+            document.getElementById("radio" + count).checked = true;
+        }
+
+
+        
+        let countt = 1;
+        var click11 = document.querySelector(".click11");
+        var click22 = document.querySelector(".click22");
+
+        click11.addEventListener('click', backBan, false);
+        click22.addEventListener('click', nextBan, false);
+
+        function nextBan() {
+            countt++;
+            if(countt > 3) {
+                countt = 1;
+            }
+            document.getElementById("radioo" + countt).checked = true;
+        }
+
+        function backBan() {
+            countt--;
+            if(countt < 1) {
+                countt = 3;
+            }
+            document.getElementById("radioo" + countt).checked = true;
+        }
+
+
     </script>
 </body>
 </html>
