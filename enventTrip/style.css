@@ -228,7 +228,6 @@ nav {
     background-color: #FA3F0F;
     overflow: hidden;
     position: relative;
-    margin-bottom: 300px;
 }
 
 .partnerships .part-img {
@@ -286,4 +285,66 @@ nav {
     .partnerships {
         margin-top: 100px;
     }
+}
+
+/* Top Events */
+.top-events {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.top-events h2 {
+    width: 100%;
+    margin-bottom: 50px;    
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #2A2625;
+}
+
+.card-slide {
+    width: 630px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.card-img {
+    height: 284px;
+    position: relative;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    width: calc(100% - 18px);
+    display: flex;
+    gap: 430px;
+}
+
+.card-btn > div {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-secondary {
+    padding: 5px 19px;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    border: none;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.005em;
+}
+
+.btn-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    border-radius: 100%;
+    border: none;
 }
